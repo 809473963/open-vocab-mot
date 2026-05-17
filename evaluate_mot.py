@@ -51,7 +51,7 @@ if __name__ == "__main__":
     # 强制打印当前工作目录，防止相对路径坑人
     print(f" 当前运行目录: {os.getcwd()}")
     
-    gt_path = os.path.expanduser('~/cv_project/data/MOT17/train/MOT17-04-FRCNN/gt/gt.txt')
+    gt_path = os.path.expanduser('~/open-vocab-mot/data/MOT17/train/MOT17-04-FRCNN/gt/gt.txt')
     res_path = 'MOT17-04-results.txt'
     
     # 显式检查文件是否存在

@@ -276,9 +276,17 @@ python evaluate_mot.py
 # 输出：MOT17-04 的 MOTA、IDF1、ID 切换次数、精确率、召回率
 ```
 
-> 将终端输出截图放在此处，命名建议：`docs/mot_eval_result.jpg`
+**MOT17-04-FRCNN 评估结果（YOLOv8m + BoT-SORT NSA Kalman）：**
 
-![MOT 评估结果](docs/mot_eval_result.jpg)
+| 指标 | 数值 | 说明 |
+|---|---|---|
+| **MOTA** | 26.27% | 综合追踪精度（误检+漏检+ID切换） |
+| **IDF1** | 39.75% | ID 一致性 F1 分数 |
+| **ID Switches** | 187 | 全序列 ID 切换次数 |
+| **Precision** | 80.96% | 检测精确率 |
+| **Recall** | 34.58% | 检测召回率 |
+
+> MOTA 偏低主要因为召回率不足（34.6%）：`track_demo.py` 使用较高置信度阈值（conf=0.2）以减少误检，导致部分真实目标未被检测到。Precision 80.96% 说明已检测目标的追踪质量较好。
 
 ---
 

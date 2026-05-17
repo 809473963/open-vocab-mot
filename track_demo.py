@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import os
 
 # 1. 加载模型
-model_path = os.path.expanduser('~/cv_project/runs/detect/runs/detect/yolov8m_mot17_finetune/weights/best.pt')
+model_path = os.path.expanduser('~/open-vocab-mot/runs/detect/yolov8m_mot17_finetune/weights/best.pt')
 model = YOLO(model_path)
 
 # 2. 配置跟踪
