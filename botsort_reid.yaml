@@ -1,0 +1,14 @@
+tracker_type: botsort
+track_high_thresh: 0.25
+track_low_thresh: 0.1
+new_track_thresh: 0.25
+track_buffer: 60
+match_thresh: 0.8
+fuse_score: True
+gmc_method: sparseOptFlow
+proximity_thresh: 0.5
+appearance_thresh: 0.25
+
+# --- 满足 track.py 强迫症的 Re-ID 配置 ---
+with_reid: False
+# model: yolov8n-cls.pt  # 必须保留 model 这个键，用 OSNet 替换 auto
