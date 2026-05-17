@@ -1,0 +1,7 @@
+# mot17.yaml
+path: /home/luo/cv_project/data/mot17_yolo  # 替换为你的绝对路径
+train: images/train
+val: images/train  # 初始阶段可直接用训练集做验证
+
+names:
+  0: pedestrian
