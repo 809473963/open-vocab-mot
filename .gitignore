@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Dataset (download separately)
+data/
+
+# Model weights (download separately)
+*.pt
+*.pth
+
+# Training outputs
+runs/
+
+# Large result files
+MOT17-04-results.txt
+
+# Demo videos
+*.mp4
+
+# Analysis outputs（保留仪表盘图供 README 展示）
+*.png
+!dsp_analysis_dashboard.png
+!track_demo.png
+!sam_demo.png
+
+# Verification outputs
+verify_result/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
